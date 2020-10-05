@@ -108,10 +108,10 @@
 			var $st = $(this).scrollTop();
 			if ($st > $scrollPos) {
 				// Скролл Вниз
-				$('.to-top').addClass('show');
+				$('.to-top').removeClass('show');
 			} else {
 				// Скролл Вверх
-				$('.to-top').removeClass('show');
+				$('.to-top').addClass('show');
 			}
 			if ($st == 0) {
 				$('.to-top').removeClass('show');
