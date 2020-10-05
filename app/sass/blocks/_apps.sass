@@ -111,12 +111,13 @@
 			@include mq($max-width: 1200px)
 				width: 48%
 		@include mq($max-width: 1200px)
-			width: 200px
+			width: 48%
+			margin: 1%
 			display: flex
 			flex-direction: column
 			align-items: center
-		@include mq($max-width: 700px)
-			width: 125px
+		// @include mq($max-width: 700px)
+		// 	width: 125px
 		@include mq($max-width: 575px)
 			margin-bottom: 20px
 		&:hover
@@ -158,6 +159,7 @@
 				display: none
 				@include mq($max-width: 1200px)
 					display: block
+					width: 100%
 					margin-bottom: 10px
 		&__text
 			text-align: center

@@ -712,7 +712,8 @@ body {
           width: 48%; } }
     @media only screen and (max-width: 1200px) {
       .apps .logo {
-        width: 200px;
+        width: 48%;
+        margin: 1%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -723,9 +724,6 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; } }
-    @media only screen and (max-width: 700px) {
-      .apps .logo {
-        width: 125px; } }
     @media only screen and (max-width: 575px) {
       .apps .logo {
         margin-bottom: 20px; } }
@@ -781,6 +779,7 @@ body {
         @media only screen and (max-width: 1200px) {
           .apps .logo__img_mobile {
             display: block;
+            width: 100%;
             margin-bottom: 10px; } }
     .apps .logo__text {
       text-align: center;
