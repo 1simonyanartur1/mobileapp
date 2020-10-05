@@ -1,0 +1,47 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.tables
+				.container
+					.block-title2 Оглавление
+					ul.list
+						li 
+							a(href="") 1. Главная
+						li 
+							a(href="") 2. Android
+							ul
+								li 
+									a(href="") 2.1 Название
+								li 
+									a(href="") 2.1 Название
+								li 
+									a(href="") 2.1 Название
+						li 
+							a(href="") 3. Ios
+							ul
+								li 
+									a(href="") 2.1 Название
+								li 
+									a(href="") 2.1 Название
+								li 
+									a(href="") 2.1 Название
+						li 
+							a(href="") 4. PC
+							ul
+								li 
+									a(href="") 2.1 Название
+								li 
+									a(href="") 2.1 Название
+								li 
+									a(href="") 2.1 Название
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

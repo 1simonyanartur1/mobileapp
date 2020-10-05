@@ -1,0 +1,80 @@
+.comments
+	padding: 30px 0
+	@include mq($max-width: 575px)
+		padding: 20px 0
+	.item
+		background: $blue2
+		padding: 30px
+		margin-bottom: 20px
+		border-radius: 8px
+		@include mq($max-width: 575px)
+			padding: 10px
+		&-bottom
+			margin-top: 30px
+			margin-left: 80px
+			border-top: 1px solid rgba(0, 87, 255, 0.25)
+			padding-top: 20px
+			@include mq($max-width: 700px)
+				margin-left: 0
+		&-user
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+			&__img
+				width: 60px
+				height: auto
+				display: block
+			&-info
+				margin-left: 20px
+				span
+					font-size: 14px
+					margin-right: 25px
+				b
+					font-size: 16px
+					margin-top: 10px
+					display: block
+					color: $blue
+		&__text
+			padding-left: 80px
+			line-height: 1.4
+			@include mq($max-width: 700px)
+				padding-left: 0
+		&__link
+			display: block
+			width: 100%
+			margin-bottom: 10px
+			margin-top: 20px
+			margin-left: 80px
+			text-decoration: underline
+			color: $dark
+			@include mq($max-width: 700px)
+				margin-left: 0
+		&-images
+			margin-left: 80px
+			width: 300px
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			@include mq($max-width: 700px)
+				margin-left: 0
+			@include mq($max-width: 575px)
+				width: 100%
+			&-wrap
+				display: none
+				margin: 1%
+				img
+					display: block
+					width: 100%
+					height: auto
+				&:first-child
+					display: block
+					width: 98%
+					height: auto
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4)
+					display: block
+					width: 31%
+
+
+

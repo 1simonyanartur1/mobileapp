@@ -1,0 +1,235 @@
+.download
+	padding: 30px 0
+	@include mq($max-width: 1200px)
+		display: none
+	&.mobile
+		display: none
+		padding: 0 0 0 0
+		@include mq($max-width: 1200px)
+			display: block
+		.container
+			display: flex
+			flex-direction: column
+			align-items: center
+		.block
+			width: 400px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 20px
+			@include mq($max-width: 700px)
+				width: 100%
+			&__text
+				color: $blue
+				font-weight: 700
+				font-size: 16px
+				margin-bottom: 10px
+				@include mq($max-width: 450px)
+					font-size: 20px
+				@include mq($max-width: 380px)
+					font-size: 18px
+				@include mq($max-width: 370px)
+					font-size: 16px
+			&-inner
+				margin-left: 20px
+				@include mq($max-width: 450px)
+					width: 50%
+			.stars
+				font-size: 16px
+			.star
+				width: 12px
+				height: 12px
+			&__img
+				@include mq($max-width: 450px)
+					width: 40%
+		.block2
+			width: 300px
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: 25px
+			@include mq($max-width: 700px)
+				width: 100%
+		.top
+			margin-bottom: 0
+			.code
+				width: auto
+				display: flex
+				align-items: flex-end
+				@include mq($max-width: 450px)
+					margin: 15px 0 0 0
+					width: 100%
+				&__btn
+					font-size: 13px
+					padding: 0 25px
+					border-radius: 8px
+					@include mq($max-width: 450px)
+						width: 48%
+				&__icon
+					margin-left: 10px
+				&__text
+					margin-bottom: 5px
+				&-inner
+					border: none
+					flex-direction: column
+					flex-wrap: nowrap
+					margin: 0 0 0 10px
+					padding: 0
+					height: auto
+					@include mq($max-width: 450px)
+						width: 48%
+					&-inner
+						height: 54px
+						display: flex
+						align-items: center
+						justify-content: center
+						border-radius: 8px
+						padding: 0 25px
+						border: 1px solid $gray
+						@include mq($max-width: 450px)
+							width: 100%
+			.btn2
+				padding: 25px 45px
+				margin-bottom: 20px
+				width: auto
+				@include mq($max-width: 450px)
+					width: 100%
+					padding: 25px 10px
+	.top
+		@include start-between
+		margin-bottom: 90px
+		&-left
+			width: 670px
+			@include mq($max-width: 1200px)
+				width: 50%
+		&-right
+			width: 400px
+			@include mq($max-width: 1200px)
+				width: 50%
+		.btn2
+			width: 500px
+		.code
+			width: 500px
+			margin: 30px 0 0 0
+			&-inner
+				margin-left: 0
+	.bottom
+		@include start-between
+		@include mq($max-width: 1200px)
+			flex-wrap: nowrap
+			width: 100%
+			overflow: auto
+			padding-bottom: 25px
+			&::-webkit-scrollbar
+				height: 10px
+				border-radius: 5px
+				overflow: hidden
+			&::-webkit-scrollbar-track
+				background: $gray
+			&::-webkit-scrollbar-thumb
+				border-radius: 5px
+				background: $blue
+			&::-webkit-scrollbar-thumb:hover
+				background: $dark
+		&-block
+			&__text
+				font-weight: 600
+				padding-top: 0
+				font-size: 14px
+				text-align: center
+	&__img
+		display: block
+		width: 240px
+		height: auto
+		@include mq($max-width: 1200px)
+			&:not(:last-child)
+				margin-right: 15px
+
+	.code__btn
+		font-weight: 400
+		background: none
+		color: $dark
+		border: 1px solid #A9A9A9
+		&:hover
+			background: $blue
+			color: $white
+			border-color: $blue
+
+	.vidget
+		width: 400px
+		@include mq($max-width: 1200px)
+			width: 100%
+		&__text
+			font-size: 18px
+		.stars
+			display: flex
+			align-items: center
+			font-size: 24px
+			li.num
+				margin-left: 15px
+		.star
+			display: inline-block
+			cursor: pointer
+			margin-right: 6px
+			&.default
+				background: url($img+'star2.svg') no-repeat center center / contain
+			&.active
+				background: url($img+'star3.svg') no-repeat center center / contain
+		&-top
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+			.stars
+				margin-left: 10px
+			.star-example
+				width: 15px
+				height: 15px
+				margin-right: 4px
+				background: url($img+'star3.svg') no-repeat center center / contain
+				&:last-child
+					background: url($img+'star2.svg') no-repeat center center / contain
+				&:nth-child(4)
+					position: relative
+					position: relative
+					&:before
+						content: ''
+						width: 10px
+						height: 11px
+						background: url($img+'cursor.svg') no-repeat center center / contain
+						position: absolute
+						right: -4px
+						bottom: -4px
+		&-center
+			background: $blue2
+			border-radius: 14px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			height: 174px
+			position: relative
+			margin-bottom: 20px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 10px
+				top: 10px
+				right: 10px
+				bottom: -10px
+				background: $blue3
+				border-radius: 10px
+				z-index: -1
+			.star
+				width: 23px
+				height: 23px
+			&__img
+				margin-bottom: 10px
+				display: block
+				width: 80%
+		&-bottom
+			text-align: center
+			span
+				color: $blue
+				font-weight: 700
+

@@ -1,0 +1,67 @@
+.footer
+	padding: 35px 0 60px
+	background: $blue
+	position: relative
+	@include mq($max-width: 1200px)
+		margin-top: 50px
+	.logo
+		color: $white
+		font-weight: 700
+		font-size: 32px
+		margin-bottom: 40px
+		@include mq($max-width: 1200px)
+			font-size: 25px
+	.menu-wrap
+		display: flex
+		align-items: flex-start
+		margin-bottom: 60px
+		flex-wrap: wrap
+		@include mq($max-width: 575px)
+			margin-bottom: 0
+	.block
+		@include mq($max-width: 1200px)
+			width: 24%
+			padding-right: 10px
+		@include mq($max-width: 575px)
+			width: 49%
+			margin-bottom: 25px
+		&:not(:last-child)
+			margin-right: 120px
+			@include mq($max-width: 1200px)
+				margin-right: 0
+		&__title
+			font-family: 'Roboto Condensed', sans-serif
+			color: $white
+			margin-bottom: 15px
+			font-size: 18px
+			font-weight: 300
+	a.block__title
+		text-decoration: underline
+	.menu
+		li
+		a
+			font-family: 'Roboto Condensed', sans-serif
+			line-height: 3
+			color: $white
+			font-size: 13px
+			font-weight: 300
+			@include mq($max-width: 575px)
+				line-height: 2
+	.social
+		&__title
+			font-family: 'Roboto Condensed', sans-serif
+			color: $white
+			font-size: 18px
+			margin-bottom: 10px
+		&-list
+			display: flex
+			flex-wrap: wrap
+			li
+				&:not(:last-child)
+					margin-right: 5px
+			a
+				width: 32px
+				height: 32px
+				@include center-center
+				border-radius: 4px
+				background: $white
